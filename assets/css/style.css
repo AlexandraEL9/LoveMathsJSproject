@@ -6,6 +6,7 @@ body {
     color: #445361;
     text-align: center;
 }
+
 /* --------- Heading */
 
 .heading {
@@ -17,6 +18,7 @@ body {
     height: 40px;
     padding-right: 5px;
 }
+
 /* --------- Game layout */
 
 .game-area {
@@ -81,6 +83,7 @@ body {
     display: inline-block;
     padding: 25px;
 }
+
 /* --------- Buttons */
 
 .btn {
@@ -106,6 +109,14 @@ body {
     font-size: 3.2rem;
     margin: 0 30px;
     transition: all 0.5s;
+}
+
+.btn--big::after{
+    content: attr(data-type);
+    font-size: 1rem;
+    color: #445361;
+    position: relative;
+    left: -0.5em;
 }
 
 .btn--blue {
@@ -163,6 +174,7 @@ body {
 .btn--gray:hover {
     background-color: #0d1013;
 }
+
 /* --------- Media queries */
 
 @media (max-width: 414px) {
